@@ -10800,7 +10800,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: #fff;
 }
 
@@ -10844,5 +10844,9 @@ section .content p {
   font-weight: normal;
   font-size: medium;
   font-style: oblique;
+}
+
+ul li span {
+  color: #6f42c1;
 }
 /*# sourceMappingURL=style.css.map */
