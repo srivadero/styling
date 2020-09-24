@@ -10824,28 +10824,13 @@ section.section-bg {
 }
 
 section h2 {
-  color: chartreuse;
+  color: #343a40;
+  text-transform: uppercase;
   text-align: center;
 }
 
 section p {
-  color: chartreuse;
-  text-align: justify;
-}
-
-.hero {
-  min-height: 80vh;
-}
-
-.hero .image {
-  padding: 10px;
-  min-height: 300px;
-  background-color: bisque;
-}
-
-.hero .title {
-  padding: 10px;
-  min-height: 300px;
-  background-color: aquamarine;
+  color: #495057;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
