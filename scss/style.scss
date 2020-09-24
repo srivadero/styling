@@ -1,6 +1,7 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 body {
+    font-family: 'Montserrat', sans-serif;
     background-color: $white;
 }
 
@@ -20,18 +21,34 @@ section {
     overflow: hidden;
 
     &.section-bg {
-        background-color: $gray-300;
+        background-color: $gray-200;
     }
 
 
-    h2 {
-        color: $gray-800;
-        text-transform: uppercase;
-        text-align: center;
-    }
+        h2 {
+            color: $purple;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 700;
+        }
+    
+        p {
+            color: $gray-700;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+    
 
-    p {
-        color: $gray-700;
-        text-align: center;
+    .content{
+        p {
+            color: $gray-700;
+            padding-top: 15px;
+            text-align: justify;
+            font-weight: normal;
+            font-size: medium;
+            font-style: oblique;
+        }
+
     }
 }
+

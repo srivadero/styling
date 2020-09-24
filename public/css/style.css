@@ -10800,6 +10800,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 body {
+  font-family: 'Montserrat', sans-serif;
   background-color: #fff;
 }
 
@@ -10820,17 +10821,28 @@ section {
 }
 
 section.section-bg {
-  background-color: #dee2e6;
+  background-color: #e9ecef;
 }
 
 section h2 {
-  color: #343a40;
+  color: #6f42c1;
   text-transform: uppercase;
   text-align: center;
+  font-weight: 700;
 }
 
 section p {
   color: #495057;
   text-align: center;
+  margin-bottom: 3rem;
+}
+
+section .content p {
+  color: #495057;
+  padding-top: 15px;
+  text-align: justify;
+  font-weight: normal;
+  font-size: medium;
+  font-style: oblique;
 }
 /*# sourceMappingURL=style.css.map */
