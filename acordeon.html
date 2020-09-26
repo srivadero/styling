@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="public/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="public/css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <title>Hello!!</title>
+
+    <style>
+        .myaccordion {
+            max-width: 500px;
+            margin: 50px auto;
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+        }
+
+        .myaccordion .card,
+        .myaccordion .card:last-child .card-header {
+            border: none;
+        }
+
+        .myaccordion .card-header {
+            border-bottom-color: #EDEFF0;
+            background: transparent;
+        }
+
+        .myaccordion .fa-stack {
+            font-size: 18px;
+        }
+
+        .myaccordion .btn {
+            width: 100%;
+            font-weight: bold;
+            color: #004987;
+            padding: 0;
+        }
+
+        .myaccordion .btn-link:hover,
+        .myaccordion .btn-link:focus {
+            text-decoration: none;
+        }
+
+        .myaccordion li+li {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="section-title">
+                    <h2>Title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolor repellat facere maxime!
+                        Minima, fugit
+                        in ab sed esse reiciendis?</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 content">
+
+                        <div id="accordion" class="myaccordion">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <button
+                                            class="d-flex align-items-center justify-content-between btn btn-link collapsed"
+                                            data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                                            aria-controls="collapseOne">
+                                            Lorem ipsum dolor sit amet.
+                                            <span class="fa-stack fa-sm">
+                                                <i class="fa fa-circle fa-stack-2x"></i>
+                                                <i class="fa fa-plus fa-stack-1x fa-inverse"></i>
+                                            </span>
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p>In pariatur quod nulla non libero ducimus a fugit vitae, soluta perferendis? Esse itaque, corrupti laudantium rerum placeat odio dolor voluptas, ipsum quo reiciendis iste quisquam doloribus modi vel minus optio, eos inventore! Deserunt, asperiores maxime nemo voluptas suscipit cupiditate iste perferendis, libero veniam natus cumque quasi? Neque pariatur iste libero cumque?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h2 class="mb-0">
+                                        <button
+                                            class="d-flex align-items-center justify-content-between btn btn-link collapsed"
+                                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                            Blanditiis iusto veniam dolorum doloremque.
+                                            <span class="fa-stack fa-sm">
+                                                <i class="fa fa-circle fa-stack-2x"></i>
+                                                <i class="fa fa-plus fa-stack-1x fa-inverse"></i>
+                                            </span>
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p>Vitae nobis mollitia ducimus ab illum, veniam in, voluptas quidem excepturi voluptates consectetur aspernatur magnam provident, odio amet? Consequuntur fugiat nihil eaque ea incidunt odio architecto esse? Quidem ratione at eos amet, eius rem. Corporis, doloremque quae nam deserunt totam eveniet a at eos excepturi id animi sapiente minima iste esse culpa!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button
+                                            class="d-flex align-items-center justify-content-between btn btn-link collapsed"
+                                            data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                            Debitis voluptate ad animi soluta?
+                                            <span class="fa-stack fa-sm">
+                                                <i class="fa fa-circle fa-stack-2x"></i>
+                                                <i class="fa fa-plus fa-stack-1x fa-inverse"></i>
+                                            </span>
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p>Adipisci non voluptatem voluptatum necessitatibus modi veniam ipsa vero molestias, vel laudantium aliquid obcaecati eaque eum quia animi ut sunt culpa expedita architecto doloremque asperiores harum praesentium! Amet quisquam, impedit deleniti, voluptates veniam asperiores, temporibus consectetur porro quae aut quasi sit doloribus corrupti laborum nam perferendis. Natus qui quasi dignissimos laborum error.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div id="accordion-list" class="myaccordion accordion-list">
+                            <ul>
+                                <li>
+                                    <a data-toggle="collapse" href="#accordion-list-1"
+                                        class="collapse show"><span>01</span> Adipisci non voluptatem voluptatum <i
+                                            class="fa fa-chevron-up"></i></a>
+                                    <div id="accordion-list-1" class="collapse show" data-parent="#accordion-list">
+                                        <p>Ipsa dolores voluptate amet atque quasi deleniti, minus sed quis. Placeat, provident!</p>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <a data-toggle="collapse" href="#accordion-list-2" class="collapsed"><span>02</span> Doloribus rerum ad minus excepturi enim<i
+                                        class="fa fa-chevron-down"></i></a>
+                                    <div id="accordion-list-2" class="collapse" data-parent="#accordion-list">
+                                        <p>Eaque, tenetur labore. Facere fuga non ad quis a inventore, ex cumque.</p>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <a data-toggle="collapse" href="#accordion-list-3" class="collapsed"><span>03</span> Eaque, tenetur labore. Facere fuga<i
+                                        class="fa fa-chevron-down"></i></a>
+                                    <div id="accordion-list-3" class="collapse" data-parent="#accordion-list">
+                                        <p>Doloribus rerum ad minus excepturi enim ipsam illo deserunt illum labore est!</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <footer>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="public/js/jquery.min.js"></script>
+    <script src="public/js/bootstrap.min.js"></script>
+    <script>
+        // A $( document ).ready() block.
+        $(document).ready(function () {
+            $("#accordion").on("hide.bs.collapse show.bs.collapse", e => {
+                $(e.target)
+                    .prev()
+                    .find("i:last-child")
+                    .toggleClass("fa-minus fa-plus");
+            });
+            $("#accordion-list").on("hide.bs.collapse show.bs.collapse", e => {
+                $(e.target)
+                    .prev()
+                    .find("i:last-child")
+                    .toggleClass("fa-chevron-down fa-chevron-up");
+            });
+            $("#accordion").on("shown.bs.collapse", e => {
+                $("html, body").animate(
+                    {
+                        scrollTop: $(e.target)
+                            .prev()
+                            .offset().top
+                    },
+                    400
+                );
+            });
+        });
+    </script>
+</body>
+
+</html>

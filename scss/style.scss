@@ -1,17 +1,19 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+$primary: rgb(64, 80, 128);
+
 body {
     font-family: "Montserrat", sans-serif;
     background-color: $white;
 }
 
 header {
-    background-color: $purple;
+    background-color: $primary;
     min-height: 80px;
 }
 
 footer {
-    background-color: $purple;
+    background-color: $primary;
     min-height: 100px;
 }
 
@@ -24,17 +26,19 @@ section {
         background-color: $gray-200;
     }
 
-    h2 {
-        color: $purple;
-        text-transform: uppercase;
-        text-align: center;
-        font-weight: 700;
-    }
+    .section-title {
+        h2 {
+            color: $primary;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 700;
+        }
 
-    p {
-        color: $gray-700;
-        text-align: center;
-        margin-bottom: 3rem;
+        p {
+            color: $gray-700;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
     }
 
     .content {
@@ -49,12 +53,96 @@ section {
     }
 }
 
-ul
-{
+ul {
     li {
         span {
-            color: $purple;
+            color: $primary;
         }
-
     }
 }
+
+.accordion-list {
+    // padding: 0 100px 60px 100px;
+
+    ul {
+        // padding: 0;
+        list-style: none;
+    }
+
+    li + li {
+        margin-top: 15px;
+    }
+
+    li {
+        padding: 20px;
+        background: #fff;
+        border-radius: 4px;
+    }
+
+    a {
+        display: block;
+        position: relative;
+        // font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+        padding-right: 30px;
+        outline: none;
+        text-decoration: none;
+    }
+
+    span {
+        color: #47b2e4;
+        font-weight: 600;
+        font-size: 18px;
+        padding-right: 10px;
+    }
+
+    i {
+        font-size: 24px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    p {
+        margin-bottom: 0;
+        padding: 10px 0 0 0;
+    }
+
+    .icon-show {
+        display: none;
+    }
+
+    a.collapsed {
+        color: #343a40;
+    }
+
+    a.collapsed:hover {
+        color: #47b2e4;
+    }
+
+    a.collapsed .icon-show {
+        display: inline-block;
+    }
+
+    a.collapsed .icon-close {
+        display: none;
+    }
+}
+
+/*
+SECTION
+    TITLE
+    PARAGRAPH
+    LIST
+    BUTTONLINK
+    SUBTITLE
+    IMAGE
+    ACCORDION
+    COUNTER / PROGRESS
+    ICONBOX
+    PERSONAL BOX
+    PRICING BOX
+
+*/
