@@ -54,9 +54,18 @@ section {
 }
 
 ul {
+    list-style-type: none;
+    padding: 0px;
+
     li {
-        span {
-            color: $primary;
+        padding-bottom: 10px;
+        // overflow: visible;
+        white-space: normal;
+
+        i {
+            color: $purple;
+            // font-weight: 900;
+            padding-right: 15px;
         }
     }
 }
