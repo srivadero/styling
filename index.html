@@ -90,7 +90,7 @@
         </div>
         <div class="row">
           <div class="col-md-6">
-            <div class="accordion-list">
+            <div id="accordion-list" class="accordion-list">
               <ul>
                 <li>
                     <a data-toggle="collapse" href="#accordion-list-1"
@@ -191,19 +191,19 @@
   <script>
     // A $( document ).ready() block.
     $(document).ready(function () {
-        $(".myaccordion").on("hide.bs.collapse show.bs.collapse", e => {
+        $(".accordion-list").on("hide.bs.collapse show.bs.collapse", e => {
             $(e.target)
                 .prev()
                 .find("i:last-child")
                 .toggleClass("fa-minus fa-plus");
         });
-        $(".myaccordion-list").on("hide.bs.collapse show.bs.collapse", e => {
+        $("#accordion-list").on("hide.bs.collapse show.bs.collapse", e => {
             $(e.target)
                 .prev()
                 .find("i:last-child")
                 .toggleClass("fa-chevron-down fa-chevron-up");
         });
-        $(".myaccordion").on("shown.bs.collapse", e => {
+        $("._accordion-list").on("shown.bs.collapse", e => {
             $("html, body").animate(
                 {
                     scrollTop: $(e.target)
