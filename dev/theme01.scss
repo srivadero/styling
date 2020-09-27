@@ -1,4 +1,4 @@
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 $primary: rgb(64, 80, 128);
 
@@ -55,28 +55,61 @@ section {
     ul {
         list-style-type: none;
         padding: 0px;
-    
+
         li {
             padding-bottom: 10px;
             // overflow: visible;
             white-space: normal;
-    
+
             i {
                 color: $purple;
                 // font-weight: 900;
                 padding-right: 15px;
             }
 
-            a{
+            a {
                 color: $primary;
                 font-weight: bold;
                 text-decoration: none;
-                &:hover{
+                &:hover {
                     text-decoration: none;
                 }
             }
-
         }
     }
-    
+}
+
+.icon-box {
+    margin-bottom: 20px;
+    text-align: center;
+
+    .icon {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+        & i {
+            color: $primary;
+            font-size: 42px;
+        }
+    }
+
+    .title {
+        font-weight: 700;
+        margin-bottom: 15px;
+        font-size: 18px;
+        text-transform: uppercase;
+        & a {
+            color: $secondary;
+            transition: 0.3s;
+        }
+    }
+
+    &:hover .title a {
+        color: $primary;
+    }
+
+    .description {
+        line-height: 24px;
+        font-size: 14px;
+    }
 }
