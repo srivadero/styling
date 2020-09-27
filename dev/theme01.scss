@@ -1,0 +1,82 @@
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+$primary: rgb(64, 80, 128);
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: $white;
+}
+
+header {
+    background-color: $primary;
+    min-height: 80px;
+}
+
+footer {
+    background-color: $primary;
+    min-height: 100px;
+}
+
+section {
+    min-height: 5rem;
+    padding: 60px 0;
+    overflow: hidden;
+
+    &.section-bg {
+        background-color: $gray-200;
+    }
+
+    .section-title {
+        h2 {
+            color: $primary;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        p {
+            color: $gray-700;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+    }
+
+    .content {
+        p {
+            color: $gray-700;
+            padding-top: 15px;
+            text-align: justify;
+            font-weight: normal;
+            font-size: medium;
+            font-style: oblique;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0px;
+    
+        li {
+            padding-bottom: 10px;
+            // overflow: visible;
+            white-space: normal;
+    
+            i {
+                color: $purple;
+                // font-weight: 900;
+                padding-right: 15px;
+            }
+
+            a{
+                color: $primary;
+                font-weight: bold;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+
+        }
+    }
+    
+}
